@@ -1,0 +1,78 @@
+<md:EntityDescriptor entityID="wns.helpdesk.indictranstech.com" cacheDuration="PT1440M" ID="wns_helpdesk" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:AssertionConsumerService isDefault="true" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:9002/api/method/adfs.adfs.adfs_login.init_acs_endpoint" index="0" />
+        <md:AttributeConsumingService index="0">
+            <md:ServiceName xml:lang="en">AttributeContract</md:ServiceName>
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/claims/authnmethodsreferences" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/ws/2012/01/passwordchangeurl" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/field/notafter" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/ws/2012/01/insidecorporatenetwork" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-proxy" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/ws/2012/01/passwordexpirationtime" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/01/devicecontext/claims/registrationid" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/authoritykeyidentifier" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/01/devicecontext/claims/displayname" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationinstant" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/keyusage" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/primarygroupsid" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/denyonlyprimarygroupsid" />
+            <md:RequestedAttribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/field/issuer" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-endpoint-absolute-path" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/01/devicecontext/claims/osversion" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/field/notbefore" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/certificatetemplateinformation" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/field/rawdata" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/certificatetemplatename" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/01/requestcontext/claims/relyingpartytrustid" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/basicconstraints" />
+            <md:RequestedAttribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/denyonlysid" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-client-ip" />
+            <md:RequestedAttribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/01/requestcontext/claims/client-request-id" />
+            <md:RequestedAttribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/privatepersonalidentifier" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/san" />
+            <md:RequestedAttribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/01/devicecontext/claims/ismanaged" />
+            <md:RequestedAttribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-client-application" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-client-user-agent" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/serialnumber" />
+            <md:RequestedAttribute Name="http://schemas.xmlsoap.org/claims/CommonName" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/field/x509version" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/denyonlyprimarysid" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/role" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/ws/2013/11/alternateloginid" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/01/devicecontext/claims/ostype" />
+            <md:RequestedAttribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/field/subjectname" />
+            <md:RequestedAttribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/rsa" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/subjectkeyidentifier" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/eku" />
+            <md:RequestedAttribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/thumbprint" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/field/subject" />
+            <md:RequestedAttribute Name="http://schemas.xmlsoap.org/claims/UPN" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/certificatepolicy" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/01/requestcontext/claims/x-ms-forwarded-client-ip" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/extension/applicationpolicy" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/ws/2012/01/passwordexpirationdays" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/ws/2008/06/identity/claims/authenticationmethod" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/field/issuername" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/01/devicecontext/claims/isregistereduser" />
+            <md:RequestedAttribute Name="http://schemas.xmlsoap.org/claims/EmailAddress" />
+            <md:RequestedAttribute Name="http://schemas.xmlsoap.org/claims/Group" />
+            <md:RequestedAttribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/12/certificatecontext/field/signaturealgorithm" />
+            <md:RequestedAttribute Name="http://schemas.microsoft.com/2012/01/devicecontext/claims/identifier" />
+        </md:AttributeConsumingService>
+    </md:SPSSODescriptor>
+    <md:ContactPerson contactType="administrative">
+        <md:Company>New Indictrans Pvt Ltd.</md:Company>
+        <md:GivenName>Suyash</md:GivenName>
+        <md:SurName>xxxx</md:SurName>
+        <md:EmailAddress>indictrans@gmail.com</md:EmailAddress>
+    </md:ContactPerson>
+</md:EntityDescriptor>

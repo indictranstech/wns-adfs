@@ -1,0 +1,31 @@
+
+{
+    "strict": true,
+    "debug": true,
+    "sp": {
+        "entityId": "http://localhost:9002/",
+        "assertionConsumerService": {
+            "url": "http://localhost:9002/api/method/adfs.adfs.adfs_login.init_acs_endpoint",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+        },
+        "singleLogoutService": {
+            "url": "http://localhost:9002/",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "NameIDFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+        "x509cert": "",
+        "privateKey": ""
+    },
+    "idp": {
+        "entityId": "https://adfs.wns.com/adfs/services/trust",
+        "singleSignOnService": {
+            "url": "https://adfs.wns.com/adfs/ls",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "singleLogoutService": {
+            "url": "https://adfs.wns.com/adfs/services/trust/saml2/http-redirect/slo/wind",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "x509cert": ""
+    }
+}
